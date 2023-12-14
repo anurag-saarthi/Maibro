@@ -1,0 +1,89 @@
+version: "3.4"
+
+services:
+  rasa-core-hindi-lead:
+    image: "saarthicore114.azurecr.io/rasa114:latest"
+    volumes:
+        - ./models:/app/models
+        - ./constants:/app/constants
+    ports:
+        - "8333:8333"
+    network_mode: "host"
+    command:
+        - -m
+        - rasa
+        - run
+        - --enable-api
+        - -m
+        - models/emi_english/emi_english_core.tar.gz
+        - --endpoints
+        - constants/emi_english/endpoints_core_hindi.yml
+        - --port
+        - "8333"
+        - -vv
+  rasa-actions-hindi-lead:
+    image: "saarthicore114.azurecr.io/rasa114:latest"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+        - ./models:/app/models
+        - ./constants:/app/constants
+        - ./actions:/app/actions
+        - ./check.py:/app/check.py
+        - ./call_logs.csv:/app/call_logs.csv
+        # - ./customer_details.json:/app/customer_details.json
+        # - ./customer_details_new.csv:/app/customer_details_new.csv
+        - ./get_customer_details.py:/app/get_customer_details.py
+        - ./handle_bulk_data.py:/app/handle_bulk_data.py
+    ports:
+        - "5333:5333"
+    network_mode: "host"
+    command:
+        - -m
+        - rasa
+        - run
+        - actions
+        - --actions
+        - actions.actions
+        - --port
+        - "5333"
+        - -vv
+  app_server-hindi-lead:
+    image: "saarthicore114.azurecr.io/rasa114:latest"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./nlu:/app/nlu
+      - ./logs:/app/logs
+      
+
+    ports:
+      - "12517:12517"
+    network_mode: "host"
+    command:
+      - nlu/emi_english/app_hindi.py
+
+  nlg_server-hindi-lead:
+    image: "saarthicore114.azurecr.io/rasa114:latest"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./nlg:/app/nlg
+      - ./nlg/emi_english/json_files:/app/nlg/emi_english/json_files
+      - ./logs:/app/logs
+    ports:
+    - "13517:13517"
+    network_mode: "host"
+    command:
+      - nlg/emi_english/nlg_server_hindi.py
+
+  Orchestrator-hindi-lead:
+    image: "saarthicore114.azurecr.io/rasa114:latest"
+    volumes:
+      - ./Orchestrator/CZ:/app/Orchestrator/CZ
+      - ./logs:/app/logs
+    ports:
+      - "7555:7555"
+    network_mode: "host"
+    command:
+      - Orchestrator/CZ/orchestrator_hindi.py

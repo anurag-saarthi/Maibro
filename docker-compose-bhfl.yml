@@ -1,0 +1,89 @@
+version: "3.4"
+
+services:
+  rasa-core-lead-bot-english:
+    image: "saarthicore114.azurecr.io/rasa114:latest"
+    volumes:
+        - ./models:/app/models
+        - ./constants:/app/constants
+    ports:
+        - "8334:8334"
+    network_mode: "host"
+    command:
+        - -m
+        - rasa
+        - run
+        - --enable-api
+        - -m
+        - models/emi_english/emi_english_core.tar.gz
+        - --endpoints
+        - constants/emi_english/endpoints_core.yml
+        - --port
+        - "8334"
+        - -vv
+
+  rasa-actions-lead-bot-english:
+    image: "saarthicore114.azurecr.io/rasa114:latest"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+        - ./models:/app/models
+        - ./constants:/app/constants
+        - ./actions:/app/actions
+        - ./check.py:/app/check.py
+        - ./call_logs.csv:/app/call_logs.csv
+        # - ./customer_details.json:/app/customer_details.json
+        # - ./customer_details_new.csv:/app/customer_details_new.csv
+        - ./get_customer_details.py:/app/get_customer_details.py
+        - ./handle_bulk_data.py:/app/handle_bulk_data.py
+    ports:
+        - "5444:5444"
+    network_mode: "host"
+    command:
+        - -m
+        - rasa
+        - run
+        - actions
+        - --actions
+        - actions.actions
+        - --port
+        - "5444"
+        - -vv
+  app-server-lead-bot-english:
+    image: "saarthicore114.azurecr.io/rasa114:latest"
+    volumes:
+      - ./nlu:/app/nlu
+      - ./logs:/app/logs
+    ports:
+      - "12518:12518"
+    network_mode: "host"
+    command:
+      - nlu/emi_english/app.py
+
+  nlg-server-lead-bot-english:
+    image: "saarthicore114.azurecr.io/rasa114:latest"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./nlg:/app/nlg
+      - ./nlg/emi_english/json_files:/app/nlg/emi_english/json_files
+      - ./logs:/app/logs
+    ports:
+    - "14210:14210"
+    network_mode: "host"
+    command:
+    - nlg/emi_english/nlg_server.py
+
+  Orchestrator-lead-bot-english:
+    image: "saarthicore114.azurecr.io/rasa114:latest"
+    volumes:
+    - ./Orchestrator/CZ:/app/Orchestrator/CZ
+    # - ./customer_details.json:/app/customer_details.json
+    - ./time_tracker.txt:/app/time_tracker.txt
+    - ./nlg/emi_english/json_files:/app/nlg/emi_english/json_files
+    - ./logs:/app/logs
+    ports:
+    - "7116:7116"
+    network_mode: "host"
+    command:
+    - Orchestrator/CZ/orchestrator.py

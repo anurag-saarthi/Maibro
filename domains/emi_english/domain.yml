@@ -1,0 +1,619 @@
+actions:
+- action_default
+- action_greet
+- action_wait
+- action_ask_availability
+- action_ask_time
+- action_repeat
+- action_no_message
+- action_ask_capability
+- action_human_handoff
+- action_noise
+- action_change_language_from_english_to_hindi
+- action_change_language
+- action_change_language_from_hindi_to_english
+- action_inform_payment_done
+- ask_emi_amount
+- action_customer_care_general_intents
+- action_bye
+- action_thank_you
+- action_initial_message
+- action_third_party_contact
+- action_talk_to_human
+- action_wrong_name
+- action_inform_wrong_info
+- action_customer_care_contact_info
+- action_how_are_you
+- action_repeating_count
+- action_humiliate
+- action_capability
+- action_call_later
+- action_general_action_by_bot_client_name
+- action_ask_offer
+- action_interest_rate
+- action_tenure
+- action_documents_required
+- action_emi_amount
+- action_information
+- action_processing_time
+- action_credit_limit
+- action_general
+- action_who_are_you
+
+- action_due_date
+- action_bounce_charges
+- action_talk_to_human_agent
+- action_processing_fees
+- action_penalty_charges
+- action_benefits
+- action_premium_amount
+- action_documents
+- action_offer
+- action_validity
+- action_settlement
+- action_health_insurance
+- action_insurance_info
+
+
+intents:
+  - initial_message:
+      triggers: action_initial_message
+  - ask_payment_link
+  - affirm
+  - deny
+  - agree_to_proceed
+  - agree_to_pay
+  - disagree_to_pay
+  - inform
+  - diagree_to_proceed
+  - cycle_date_issue
+  - account_not_working
+  - family_issue
+  - inform_wrong_info:
+      triggers: action_inform_wrong_info
+  - penalty_charges:
+      triggers: action_penalty_charges
+  - greet:
+      triggers: action_greet
+  - no_message:
+      triggers: action_no_message
+  - wait:
+      triggers: action_wait
+  - repeat:
+      triggers: action_repeat
+  - sorry:
+      triggers: action_repeat
+  - bye:
+      triggers: action_bye
+  - thankyou:
+      triggers: action_thank_you
+  - humiliate:
+      triggers: action_humiliate
+  - inform_call_later:
+      triggers: action_call_later
+  - bot_unable_to_understand:
+      triggers: action_default 
+  - ask_human_handoff:
+      triggers: action_human_handoff
+  - ask_capability:
+      triggers: action_ask_capability
+  - noise:
+      triggers: action_no_message
+  - language_change:
+      triggers: action_change_language
+  - change_language_from_english_to_hindi:
+      triggers: action_change_language_from_english_to_hindi
+  - change_language_from_hindi_to_english:
+      triggers: action_change_language_from_hindi_to_english
+  - third_party_contact:
+      triggers: action_third_party_contact   
+  - who_are_you:
+      triggers: action_who_are_you
+  - client_name:
+      triggers: action_who_are_you
+  - offers:
+      triggers: action_ask_offer
+  # - interest_rate:
+  #     triggers: action_interest_rate
+
+  - tenure:
+      triggers: action_tenure
+  - document_required:
+      triggers: action_documents_required
+  - emi_amount:
+      triggers: action_emi_amount
+  - information:
+      triggers: action_information
+  # - processing_time:
+  #     triggers: action_processing_time
+  - credit_limit:
+      triggers: action_credit_limit
+  - location:
+      triggers: action_general
+  - timings:
+      triggers: action_general
+  - change:
+      triggers: action_general
+  - income_proof:
+      triggers: action_general
+  - send_executive:
+      triggers: action_general
+  - visit:
+      triggers: action_general
+  - exchange_scheme:
+      triggers: action_general
+  - vehicle_purchase: 
+      triggers: action_general
+
+  - due_date:
+      triggers: action_due_date
+  - bounce_charges:
+      triggers: action_bounce_charges
+  - talk_to_human_agent:
+      triggers: action_talk_to_human_agent
+  - processing_fees:
+      triggers: action_processing_fees
+  - credit_score:
+      triggers: action_processing_fees
+  - interest_rate:
+      triggers: action_processing_fees
+  - processing_time:
+      triggers: action_processing_fees
+  - preclosure_period:
+      triggers: action_processing_fees
+  - autodebit:
+      triggers: action_processing_fees
+  - benefits:
+      triggers: action_benefits
+  - premium_amount:
+      triggers: action_premium_amount 
+  - documents:
+      triggers: action_documents 
+  - offer:
+      triggers: action_offer 
+  - validity:
+      triggers: action_validity
+  - settlement:
+      triggers: action_settlement
+  - client_name:
+      triggers: action_who_are_you
+  - health_insurance:
+      triggers: action_health_insurance
+  - life_insurance:
+      triggers: action_health_insurance
+  - term_insurance:
+      triggers: action_health_insurance
+  - home_loan:
+      triggers: action_health_insurance
+  - other_insurance:
+      triggers: action_health_insurance
+  - health_insurance:
+      triggers: action_health_insurance
+  - insurance_info:
+      triggers: action_insurance_info
+
+entities:
+  - time
+  - date
+
+slots:
+  already_renewed:
+    type: unfeaturized
+  renew_not_interested:
+    type: unfeaturized
+  service_experience:
+    type: unfeaturized
+  deny_assistance:
+    type: unfeaturized
+  deny_happy_help:
+    type: unfeaturized
+  assistance_response:
+    type: unfeaturized
+  deny_happy_help1:
+    type: unfeaturized
+  customer_availability_2:
+    type: unfeaturized
+  interested_later:
+    type: unfeaturized
+
+  availability_status:
+    type: unfeaturized
+  pay_now_status:
+    type: unfeaturized
+  pay_now_status_recheck:
+    type: unfeaturized
+  payment_status:
+    type: unfeaturized
+  stop_conversation:
+    type: unfeaturized
+  time:
+    type: unfeaturized
+  date:
+    type: unfeaturized
+  callback_date:
+    type: unfeaturized
+    auto_fill: False
+  callback_time:
+    type: unfeaturized
+    auto_fill: False
+  emi_uttered:
+    type: unfeaturized
+    initial_value: False
+  humiliate_count:
+    type: unfeaturized
+    initial_value: 0
+  trail_count:
+    type: unfeaturized
+    initial_value: 0
+  no_response_count:
+    type: unfeaturized
+    initial_value: 0
+  timestamp:
+    type: float
+  noise_count:
+    type: unfeaturized
+    initial_value: 0
+  floating_interest_rate_count:
+    type: unfeaturized
+    initial_value: 0
+  language_confirm:
+    type: unfeaturized
+  language_recheck:
+    type: unfeaturized
+  main_flow:
+    type: unfeaturized
+  current_slot:
+    type: unfeaturized
+  greet_count:
+    type: unfeaturized
+    initial_value: 0
+  rpc_slot:
+    type: unfeaturized
+  ptp_amount_count:
+    type: unfeaturized
+    initial_value: 0
+  insurance_general_interested_count:
+    type: unfeaturized
+    initial_value: 0
+  repeat_count:
+    type: unfeaturized
+    initial_value: 0
+  prev_message:
+    type: unfeaturized
+  default_count:
+    type: unfeaturized
+    initial_value: 0
+  sheet_name:
+    type: unfeaturized
+  change_language_count:
+    type: unfeaturized
+    initial_value: 0
+  change_specific_language_count:
+    type: unfeaturized
+    initial_value: 0
+  loan_id:
+    type: unfeaturized
+  customer_name:
+    type: unfeaturized
+  website_name_slot:
+    type: unfeaturized
+  website_name:
+    type: unfeaturized
+  client_name_slot:
+    type: unfeaturized
+  typology:
+    type: unfeaturized
+  supported_languages:
+    type: unfeaturized
+  agent_name:
+    type: unfeaturized
+  bot_gender:
+    type: unfeaturized
+  credit_product:
+    type: unfeaturized
+  threshold_days_slot:
+    type: unfeaturized
+  wait_count:
+    type: unfeaturized
+    initial_value: 0
+  name_confirmation_count:
+    type: unfeaturized
+    initial_value: 0
+  bot_capability_count:
+    type: unfeaturized
+    initial_value: 0
+  wrong_name_count:
+    type: unfeaturized
+    initial_value: 0
+  came_from_disposition_slot:
+    type: unfeaturized
+  cut_the_call:
+    type: unfeaturized
+    initial_value: 1
+  call_back_date_slot:
+    type: unfeaturized
+  ask_callback_time:
+    type: unfeaturized
+  loan_amount:
+    type: unfeaturized
+  contact_no:
+    type: unfeaturized
+  loan_tenure:
+    type: unfeaturized
+  account_number:
+    type: unfeaturized
+  emi_amount:
+    type: unfeaturized
+  due_date:
+    type: unfeaturized
+  current_main_slot:
+    type: unfeaturized
+  came_from_form_slot:
+    type: unfeaturized
+  future_later:
+    type: unfeaturized
+  go_to_form_slot:
+    type: unfeaturized
+  flow_data_slot:
+    type: unfeaturized
+  flow_list_slot:
+    type: unfeaturized
+  out_of_context_count_slot:
+    type: unfeaturized
+    initial_value: 0
+  nlu_data_list:
+    type: unfeaturized
+  utter_client_name_slot:
+    type: unfeaturized
+  utter_flow_slot:
+    type: unfeaturized
+  utter_type_slot:
+    type: unfeaturized
+  utter_category_slot:
+    type: unfeaturized
+  utter_bot_gender_slot:
+    type: unfeaturized
+  how_are_you_slot:
+    type: unfeaturized
+    initial_value: 0
+  who_are_you_slot:
+    type: unfeaturized
+    initial_value: 0
+  are_you_there_slot:
+    type: unfeaturized
+    initial_value: 0
+  customer_name_slot:
+    type: unfeaturized
+    initial_value: 0 
+  dtmf:
+    type: unfeaturized
+  dtmf_count:
+    type: unfeaturized
+    initial_value: 0
+  future_date:
+    type: unfeaturized
+  callback_alt:
+    type: unfeaturized
+  interested_later_date:
+    type: unfeaturized
+  trail_count_future_date:
+    type: unfeaturized
+    initial_value: 0
+  trail_count_interested_later:
+    type: unfeaturized
+    initial_value: 0
+  loan_availed_gs:
+    type: unfeaturized
+  name_confirmation:
+    type: unfeaturized
+  third_party_cont:
+    type: unfeaturized
+  customer_availability:
+    type: unfeaturized
+  alternate_number:
+    type: unfeaturized
+  trail_count_name_confirmation:
+    type: unfeaturized
+    initial_value: 0
+  trail_count_third_party_cont:
+    type: unfeaturized
+    initial_value: 0
+  customer_availability_count:
+    type: unfeaturized
+    initial_value: 0
+  alternate_number_count:
+    type: unfeaturized
+    initial_value: 0
+  not_interested_1:
+    type: unfeaturized
+  flow_type:
+    type: unfeaturized
+  main_response:
+    type: unfeaturized
+  maybe_slot:
+    type: unfeaturized
+  trail_count_main_response:
+    type: unfeaturized
+    initial_value: 0
+  number_confirmation:
+    type: unfeaturized
+  number_re_enter:
+    type: unfeaturized
+  number_reconfirmation:
+    type: unfeaturized
+  number_given:
+    type: unfeaturized
+  number_given_1:
+    type: unfeaturized
+  sales_pitching:
+    type: unfeaturized
+  intrested_renew:
+    type: unfeatured
+  sales_pitching_count:
+    type: unfeaturized
+    initial_value: 0
+  template_structure:
+    type: unfeaturized
+  ask_offer_count:
+    type: unfeaturized
+    initial_value: 0
+  interest_rate_count:
+    type: unfeaturized
+    initial_value: 0
+  tenure_count:
+    type: unfeaturized
+    initial_value: 0
+  documents_required_count:
+    type: unfeaturized
+    initial_value: 0
+  emi_amount_count:
+    type: unfeaturized
+    initial_value: 0
+  information_count:
+    type: unfeaturized
+    initial_value: 0
+  processing_time_count:
+    type: unfeaturized
+    initial_value: 0
+  credit_limit_count:
+    type: unfeaturized
+    initial_value: 0
+  general_count:
+    type: unfeaturized
+    initial_value: 0
+  customer_care_number:
+    type: unfeaturized
+  number_confirmation_mid:
+    type: unfeaturized
+    initial_value: 0
+
+  already_renewed_count:
+    type: unfeaturized
+    initial_value: 0
+  deny_assistance_count:
+    type: unfeaturized
+    initial_value: 0
+  deny_first_emi_count:
+    type: unfeaturized
+    initial_value: 0
+  deny_happy_help_count:
+    type: unfeaturized
+    initial_value: 0
+  service_experience_count:
+    type: unfeaturized
+    initial_value: 0
+  trail_count_assistance_response:
+    type: unfeaturized
+    initial_value: 0
+  deny_happy_help1_count:
+    type: unfeaturized
+    initial_value: 0
+  assistance_response1:
+    type: unfeaturized
+  trail_count_assistance_response1:
+    type: unfeaturized
+    initial_value: 0
+  due_date_count:
+    type: unfeaturized
+    initial_value: 0
+  loan_tenure_count:
+    type: unfeaturized
+    initial_value: 0
+  credit_limit_new_count:
+    type: unfeaturized
+    initial_value: 0
+  bounce_charge_count:
+    type: unfeaturized
+    initial_value: 0
+  penalty_charge_count:
+    type: unfeaturized
+    initial_value: 0
+  talk_count:
+    type: unfeaturized
+    initial_value: 0
+  processing_count:
+    type: unfeaturized
+    initial_value: 0
+  trail_count_customer_availability_two:
+    type: unfeaturized
+    initial_value: 0
+  audio_server:
+    type: unfeaturized
+  cust_lang:
+    type: unfeaturized
+  nach:
+    type: unfeaturized
+  insurance_info_count:
+    type: unfeaturized
+    initial_value: 0
+  health_insurance_count:
+    type: unfeaturized
+    initial_value: 0
+  settlement_count:
+    type: unfeaturized
+    initial_value: 0
+  validity_count:
+    type: unfeaturized
+    initial_value: 0
+  offer_count:
+    type: unfeaturized
+    initial_value: 0
+  documents_count:
+    type: unfeaturized
+    initial_value: 0
+  premium_amount_count:
+    type: unfeaturized
+    initial_value: 0
+  benefits_count:
+    type: unfeaturized
+    initial_value: 0
+  variation:
+    type: unfeaturized
+  vehicle_detail:
+    type: unfeaturized
+  expiry_date:
+    type: unfeaturized
+  policy_name:
+    type: unfeaturized
+  insurance_product:
+    type: unfeaturized
+  product:
+    type: unfeaturized
+  product_category:
+    type: unfeaturized
+  toll_free_number:
+    type: unfeaturized
+  interested_renew:
+    type: unfeaturized
+  trail_count_interested_renew:
+    type: unfeaturized
+    initial_value: 0
+  threshold_time_slot:
+    type: unfeaturized
+
+
+
+
+  
+forms:
+  - language_recheck_form
+  - user_confirmation_form
+  - call_back_form
+  - lg_rpc_form
+  - sales_pitch_form
+  - langauge_change_form
+  - number_confirmation_form
+  - not_interested_1_form
+  - not_interested_form
+  - interested_later_form
+  - interested_renew_form
+
+  - already_renewed_form
+  - renew_not_interested_form
+  - service_experience_form
+  - deny_assistance_form
+  - deny_happy_help_form
+  - deny_happy_help1_form
+ 
+
+

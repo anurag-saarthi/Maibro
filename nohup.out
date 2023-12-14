@@ -1,0 +1,185 @@
+[2023-10-27 09:57:45 +0000] [3013101] [INFO] Goin' Fast @ http://0.0.0.0:15517
+INFO:sanic.root:Goin' Fast @ http://0.0.0.0:15517
+[2023-10-27 09:57:45 +0000] [3013101] [INFO] Starting worker [3013101]
+INFO:sanic.root:Starting worker [3013101]
+[2023-10-27 09:57:45 +0000] [3013097] [INFO] Goin' Fast @ http://0.0.0.0:15618
+INFO:sanic.root:Goin' Fast @ http://0.0.0.0:15618
+[2023-10-27 09:57:45 +0000] [3013097] [INFO] Starting worker [3013097]
+INFO:sanic.root:Starting worker [3013097]
+INFO:     Started server process [3013102]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:9923 (Press CTRL+C to quit)
+Your Computer Name is:ip-10-0-201-144
+Your Computer IP Address is:10.0.201.144
+[2023-10-27 09:57:46 +0000] [3013093] [INFO] Goin' Fast @ http://0.0.0.0:9255
+[2023-10-27 09:57:46 +0000] [3013093] [INFO] Starting worker [3013093]
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:13522/ (Press CTRL+C to quit)
+ * Serving Flask app "app_hindi" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:14520/ (Press CTRL+C to quit)
+/home/ubuntu/miniconda3/envs/saarthienv/lib/python3.6/site-packages/google/auth/crypt/_cryptography_rsa.py:22: CryptographyDeprecationWarning: Python 3.6 is no longer supported by the Python core team. Therefore, support for it is deprecated in cryptography. The next release of cryptography will remove support for Python 3.6.
+  import cryptography.exceptions
+INFO:     Started server process [3013103]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 7020): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+e322 /home/ubuntu/Hero/Audio_server
+2023-10-27 09:57:49 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_greet'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_wait'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_change_language'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_default'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_wrong_name'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_bye'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_no_message'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_repeat'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_how_are_you'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_who_are_you'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_are_you_there'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_customer_name'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_out_of_context'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_client_name'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_wrong_number'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_ask_offer'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_interest_rate'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_documents_required'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_information'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_processing_time'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_general'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_emi_amount'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_due_date'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_tenure'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_credit_limit'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_bounce_charges'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_penalty_charges'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_talk_to_human_agent'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_processing_fees'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_initial_message'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'lg_rpc_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'sales_pitch_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'call_back_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'not_interested_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'not_interested_1_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'number_confirmation_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'interested_later_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'langauge_change_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'affirm_first_emi_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'deny_first_emi_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'service_experience_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'deny_assistance_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'deny_happy_help1_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.endpoint  - Action endpoint is up and running. on ('0.0.0.0', 7434)
+2023-10-27 09:57:49 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_greet'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_wait'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_change_language'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_default'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_wrong_name'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_bye'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_no_message'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_repeat'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_how_are_you'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_who_are_you'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_are_you_there'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_customer_name'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_out_of_context'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_client_name'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_wrong_number'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_ask_offer'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_interest_rate'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_documents_required'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_information'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_processing_time'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_general'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_emi_amount'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_due_date'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_tenure'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_credit_limit'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_bounce_charges'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_penalty_charges'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_talk_to_human_agent'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_processing_fees'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'action_initial_message'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'lg_rpc_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'sales_pitch_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'call_back_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'not_interested_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'not_interested_1_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'number_confirmation_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'interested_later_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'langauge_change_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'affirm_first_emi_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'deny_first_emi_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'service_experience_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'deny_assistance_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.executor  - Registered function for 'deny_happy_help1_form'.
+2023-10-27 09:57:49 INFO     rasa_sdk.endpoint  - Action endpoint is up and running. on ('0.0.0.0', 6321)
+/home/ubuntu/miniconda3/envs/saarthienv/lib/python3.6/site-packages/jwt/utils.py:7: CryptographyDeprecationWarning: Python 3.6 is no longer supported by the Python core team. Therefore, support for it is deprecated in cryptography. The next release of cryptography will remove support for Python 3.6.
+  from cryptography.hazmat.primitives.asymmetric.ec import EllipticCurve
+2023-10-27 09:57:50 DEBUG    rasa.core.utils  - Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2023-10-27 09:57:50 INFO     root  - Starting Rasa Core server on http://localhost:9434
+2023-10-27 09:57:50 INFO     root  - Enabling coroutine debugging. Loop id 94396071639768.
+2023-10-27 09:57:50 DEBUG    rasa.model  - Extracted model to '/tmp/tmp6e3pdsej'.
+2023-10-27 09:57:50 DEBUG    rasa.core.tracker_store  - Connected to RedisTrackerStore.
+2023-10-27 09:57:50 DEBUG    rasa.model  - Extracted model to '/tmp/tmpqrvj_7aq'.
+2023-10-27 09:57:50 DEBUG    pykwalify.compat  - Using yaml library: /home/ubuntu/miniconda3/envs/saarthienv/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+/home/ubuntu/miniconda3/envs/saarthienv/lib/python3.6/site-packages/jwt/utils.py:7: CryptographyDeprecationWarning: Python 3.6 is no longer supported by the Python core team. Therefore, support for it is deprecated in cryptography. The next release of cryptography will remove support for Python 3.6.
+  from cryptography.hazmat.primitives.asymmetric.ec import EllipticCurve
+2023-10-27 09:57:50 DEBUG    rasa.core.utils  - Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2023-10-27 09:57:50 INFO     root  - Starting Rasa Core server on http://localhost:6434
+2023-10-27 09:57:50 INFO     root  - Enabling coroutine debugging. Loop id 93927597519960.
+2023-10-27 09:57:50 DEBUG    rasa.model  - Extracted model to '/tmp/tmp3n4i1q8d'.
+2023-10-27 09:57:50 DEBUG    rasa.core.tracker_store  - Connected to RedisTrackerStore.
+2023-10-27 09:57:50 DEBUG    rasa.model  - Extracted model to '/tmp/tmpzpe585h4'.
+2023-10-27 09:57:50 DEBUG    pykwalify.compat  - Using yaml library: /home/ubuntu/miniconda3/envs/saarthienv/lib/python3.6/site-packages/ruamel/yaml/__init__.py

@@ -1,0 +1,12 @@
+action_endpoint:
+    url: http://localhost:7434/webhook
+nlu:
+    url: http://localhost:14520
+nlg:
+    url: http://localhost:15517/nlg
+tracker_store:
+    db: 5
+    password: ${REDIS_PASSWORD}
+    type: redis
+    url: ${REDIS_HOST}
+    record_exp: 300
